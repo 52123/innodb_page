@@ -1,10 +1,8 @@
 from page_structure import FileHeader as FH, PageHeader as PH, VirtualRecord as VR
-from print_strategy import count_the_index_and_record_num as count, print_index_and_record_num as piar, print_tree_level, count_tree_slot, print_index_and_record_slot
+from print_strategy import count_the_index_and_record_num as count, print_index_and_record_num as piar, \
+    print_tree_level, count_tree_slot, print_index_and_record_slot
 import optparse
 import os
-from idb import analysis,fileformat,idapython
-
-
 
 INNODB_PAGE_SIZE = 0
 
@@ -24,7 +22,6 @@ def print_btree_detail(filename):
         total_page = total_page - 1
     piar()
     print_index_and_record_slot()
-
 
 
 if __name__ == '__main__':

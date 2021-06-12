@@ -4,6 +4,7 @@ from enum import Enum
 
 # 《MySQL技术内幕(InnoDB存储引擎)》- 4.4.1 File Header
 #  源码地址：mysql-8.0.25/storage/innobase/include/page0types.h
+#  分析的文件 链接: https://pan.baidu.com/s/1LXm56c7QqfIkJNJqu38A_A  密码: 8ckc
 
 class FileHeader(Enum):
     # Field为名称，Value为(开始位置，偏移量)，偏移量可以认为是所占空间大小
